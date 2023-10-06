@@ -3,7 +3,9 @@ primes = {}
 
 
 function primes()
-
+    for i=3,100000000000000 do
+        is_prime(i)
+    end
 end
     
 
@@ -13,11 +15,14 @@ function is_prime(n)
         if n/i == 0 then
             return "not_prime"
         end
-        print("iteratio "..i)
+        -- print("iteratio "..i)
     end
+    return "is_prime"
 
 end
 
-print(is_prime(117))
+-- print(is_prime(117))
+
+primes()
 
 
