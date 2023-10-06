@@ -10,7 +10,7 @@ end
     
 
 function is_prime(n)
-
+    print('calculating for '..n)
     for i=3,math.sqrt(n) do
         if n/i == 0 then
             return "not_prime"
